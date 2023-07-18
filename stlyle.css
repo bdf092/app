@@ -1,0 +1,102 @@
+:root{
+  --primary-blue: cadetblue;
+   --secondary-blue: #a1c9d0; 
+   --primary-pink: #cc8084;
+   --secondary-pink: #fdcece; 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-pink);
+    height: 5vh;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: var(--primary-pink);
+    height: 5vh;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
+
+section{
+
+background-color: var(--primary-blue);
+font-size: 2.4rem;
+flex: 33.33%;
+border: 1px solid white;
+color: white;
+}
+
+
+
+#image {
+    background: url("https://resize.hswstatic.com/w_907/gif/rabbits-crazy-march-1a.jpg");
+    background-size: cover;
+    background-position: -50px;
+}
+
+nav {
+    background-color: var(--secondary-pink);
+    height: 5vh;
+    font-size: 2rem;
+    position: absolute;
+    width: 80%;
+    right: 0;
+    top: 5vh;
+}
+
+aside {
+    background-color: var(--secondary-blue);
+    height: 5vh;
+    font-size: 2rem;
+    width: 20%;
+
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        color: red;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        color: green;
+    }
+}
+
+/* Mobile First
+@media only screen and (min-width: 1100px) {
+    body {
+        color: red;
+    }
+} */
